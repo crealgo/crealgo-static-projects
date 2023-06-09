@@ -35,4 +35,4 @@ import{f as r}from"./index-eadbd174.js";import{x as d,s as g}from"./lit-element-
     }
   }
 }`,...(f=(c=n.parameters)==null?void 0:c.docs)==null?void 0:f.source}}};const O=["Default"];export{n as Default,O as __namedExportsOrder,P as default};
-//# sourceMappingURL=dfci-typogrpahy.stories-b573e0e5.js.map
+//# sourceMappingURL=dfci-typography.stories-b573e0e5.js.map
