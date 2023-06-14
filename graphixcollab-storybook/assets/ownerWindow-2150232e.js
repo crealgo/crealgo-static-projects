@@ -1,0 +1,2 @@
+function r(...n){return n.reduce((t,e)=>e==null?t:function(...o){t.apply(this,o),e.apply(this,o)},()=>{})}function a(n,t=166){let e;function u(...o){const c=()=>{n.apply(this,o)};clearTimeout(e),e=setTimeout(c,t)}return u.clear=()=>{clearTimeout(e)},u}function i(n){return n&&n.ownerDocument||document}function d(n){return i(n).defaultView||window}export{i as a,r as c,a as d,d as o};
+//# sourceMappingURL=ownerWindow-2150232e.js.map

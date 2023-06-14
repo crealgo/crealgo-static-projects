@@ -1,0 +1,53 @@
+import{l as J}from"./chance-a31e5df2.js";import{a as f,j as a,F as X}from"./emotion-element-6a883da9.browser.esm-e55838e6.js";import{B as K}from"./Block-91428622.js";import{C as M}from"./Container-df171808.js";import{C as Q}from"./ContentGrid-9070fa1a.js";import{r as Y,i as Z,a as oo}from"./jsx-runtime_commonjs-proxy-564537a5.js";import{A as eo}from"./ActionStack-8dd88bdd.js";import{_ as w}from"./defaultTheme-8dc337cc.js";import{_ as l}from"./emotion-use-insertion-effect-with-fallbacks.browser.esm-c604b0e9.js";import{r as p}from"./index-f1f749bf.js";import"./index-1aacdabe.js";import{c as _}from"./clsx.m-1229b3e0.js";import{s as u}from"./styled-b6ce4f35.js";import{u as B}from"./useThemeProps-1ff09982.js";import{a as I,g as D,c as P}from"./generateUtilityClasses-bdae82bf.js";import{P as ro}from"./Paper-952e3300.js";import{C as to}from"./Collapse-ebdbd2e0.js";import{u as ao}from"./useControlled-5fb3b1c0.js";import{M as no}from"./ButtonBase-f0dd9438.js";import{c as so}from"./emotion-react.browser.esm-5506366e.js";import{H as io}from"./Heading-3dd7d259.js";import"./excludePropsFromForwarding-6c5743cd.js";import"./Box-3f7d297a.js";import"./getThemeProps-f2e6066a.js";import"./Typography-b9fed576.js";import"./_commonjsHelpers-042e6b4d.js";import"./createSvgIcon-91651465.js";import"./ownerWindow-2150232e.js";import"./useIsFocusVisible-44f71b61.js";import"./useEnhancedEffect-a150ab51.js";import"./useId-53ad803b.js";import"./useEventCallback-f57d74d7.js";import"./Button-6766e6f8.js";import"./ButtonBase-13334f8c.js";import"./emotion-styled.browser.esm-6ab8df2f.js";import"./Stack-2393552a.js";import"./utils-3d8ceabf.js";import"./assertThisInitialized-e784747a.js";import"./index-96c5f47c.js";import"./useTheme-da848437.js";const co=p.createContext({}),j=co;function lo(o){return D("MuiAccordion",o)}const po=I("MuiAccordion",["root","rounded","expanded","disabled","gutters","region"]),C=po,uo=["children","className","defaultExpanded","disabled","disableGutters","expanded","onChange","square","TransitionComponent","TransitionProps"],mo=o=>{const{classes:e,square:r,expanded:t,disabled:n,disableGutters:c}=o;return P({root:["root",!r&&"rounded",t&&"expanded",n&&"disabled",!c&&"gutters"],region:["region"]},lo,e)},fo=u(ro,{name:"MuiAccordion",slot:"Root",overridesResolver:(o,e)=>{const{ownerState:r}=o;return[{[`& .${C.region}`]:e.region},e.root,!r.square&&e.rounded,!r.disableGutters&&e.gutters]}})(({theme:o})=>{const e={duration:o.transitions.duration.shortest};return{position:"relative",transition:o.transitions.create(["margin"],e),overflowAnchor:"none","&:before":{position:"absolute",left:0,top:-1,right:0,height:1,content:'""',opacity:1,backgroundColor:(o.vars||o).palette.divider,transition:o.transitions.create(["opacity","background-color"],e)},"&:first-of-type":{"&:before":{display:"none"}},[`&.${C.expanded}`]:{"&:before":{opacity:0},"&:first-of-type":{marginTop:0},"&:last-of-type":{marginBottom:0},"& + &":{"&:before":{display:"none"}}},[`&.${C.disabled}`]:{backgroundColor:(o.vars||o).palette.action.disabledBackground}}},({theme:o,ownerState:e})=>l({},!e.square&&{borderRadius:0,"&:first-of-type":{borderTopLeftRadius:(o.vars||o).shape.borderRadius,borderTopRightRadius:(o.vars||o).shape.borderRadius},"&:last-of-type":{borderBottomLeftRadius:(o.vars||o).shape.borderRadius,borderBottomRightRadius:(o.vars||o).shape.borderRadius,"@supports (-ms-ime-align: auto)":{borderBottomLeftRadius:0,borderBottomRightRadius:0}}},!e.disableGutters&&{[`&.${C.expanded}`]:{margin:"16px 0"}})),go=p.forwardRef(function(e,r){const t=B({props:e,name:"MuiAccordion"}),{children:n,className:c,defaultExpanded:i=!1,disabled:d=!1,disableGutters:g=!1,expanded:q,onChange:b,square:h=!1,TransitionComponent:v=to,TransitionProps:A}=t,$=w(t,uo),[s,m]=ao({controlled:q,default:i,name:"Accordion",state:"expanded"}),x=p.useCallback(O=>{m(!s),b&&b(O,!s)},[s,b,m]),[k,...U]=p.Children.toArray(n),L=p.useMemo(()=>({expanded:s,disabled:d,disableGutters:g,toggle:x}),[s,d,g,x]),G=l({},t,{square:h,disabled:d,disableGutters:g,expanded:s}),E=mo(G);return f(fo,l({className:_(E.root,c),ref:r,ownerState:G,square:h},$,{children:[a(j.Provider,{value:L,children:k}),a(v,l({in:s,timeout:"auto"},A,{children:a("div",{"aria-labelledby":k.props.id,id:k.props["aria-controls"],role:"region",className:E.region,children:U})}))]}))}),bo=go;function yo(o){return D("MuiAccordionDetails",o)}I("MuiAccordionDetails",["root"]);const xo=["className"],ho=o=>{const{classes:e}=o;return P({root:["root"]},yo,e)},vo=u("div",{name:"MuiAccordionDetails",slot:"Root",overridesResolver:(o,e)=>e.root})(({theme:o})=>({padding:o.spacing(1,2,2)})),Ao=p.forwardRef(function(e,r){const t=B({props:e,name:"MuiAccordionDetails"}),{className:n}=t,c=w(t,xo),i=t,d=ho(i);return a(vo,l({className:_(d.root,n),ref:r,ownerState:i},c))}),Co=Ao;function Ro(o){return D("MuiAccordionSummary",o)}const So=I("MuiAccordionSummary",["root","expanded","focusVisible","disabled","gutters","contentGutters","content","expandIconWrapper"]),y=So,_o=["children","className","expandIcon","focusVisibleClassName","onClick"],qo=o=>{const{classes:e,expanded:r,disabled:t,disableGutters:n}=o;return P({root:["root",r&&"expanded",t&&"disabled",!n&&"gutters"],focusVisible:["focusVisible"],content:["content",r&&"expanded",!n&&"contentGutters"],expandIconWrapper:["expandIconWrapper",r&&"expanded"]},Ro,e)},$o=u(no,{name:"MuiAccordionSummary",slot:"Root",overridesResolver:(o,e)=>e.root})(({theme:o,ownerState:e})=>{const r={duration:o.transitions.duration.shortest};return l({display:"flex",minHeight:48,padding:o.spacing(0,2),transition:o.transitions.create(["min-height","background-color"],r),[`&.${y.focusVisible}`]:{backgroundColor:(o.vars||o).palette.action.focus},[`&.${y.disabled}`]:{opacity:(o.vars||o).palette.action.disabledOpacity},[`&:hover:not(.${y.disabled})`]:{cursor:"pointer"}},!e.disableGutters&&{[`&.${y.expanded}`]:{minHeight:64}})}),ko=u("div",{name:"MuiAccordionSummary",slot:"Content",overridesResolver:(o,e)=>e.content})(({theme:o,ownerState:e})=>l({display:"flex",flexGrow:1,margin:"12px 0"},!e.disableGutters&&{transition:o.transitions.create(["margin"],{duration:o.transitions.duration.shortest}),[`&.${y.expanded}`]:{margin:"20px 0"}})),Mo=u("div",{name:"MuiAccordionSummary",slot:"ExpandIconWrapper",overridesResolver:(o,e)=>e.expandIconWrapper})(({theme:o})=>({display:"flex",color:(o.vars||o).palette.action.active,transform:"rotate(0deg)",transition:o.transitions.create("transform",{duration:o.transitions.duration.shortest}),[`&.${y.expanded}`]:{transform:"rotate(180deg)"}})),No=p.forwardRef(function(e,r){const t=B({props:e,name:"MuiAccordionSummary"}),{children:n,className:c,expandIcon:i,focusVisibleClassName:d,onClick:g}=t,q=w(t,_o),{disabled:b=!1,disableGutters:h,expanded:v,toggle:A}=p.useContext(j),$=x=>{A&&A(x),g&&g(x)},s=l({},t,{expanded:v,disabled:b,disableGutters:h}),m=qo(s);return f($o,l({focusRipple:!1,disableRipple:!0,disabled:b,component:"div","aria-expanded":v,className:_(m.root,c),focusVisibleClassName:_(m.focusVisible,d),onClick:$,ref:r,ownerState:s},q,{children:[a(ko,{className:m.content,ownerState:s,children:n}),i&&a(Mo,{className:m.expandIconWrapper,ownerState:s,children:i})]}))}),Vo=No;var F={},wo=Z;Object.defineProperty(F,"__esModule",{value:!0});var z=F.default=void 0,Bo=wo(Y()),Io=oo,Do=(0,Bo.default)((0,Io.jsx)("path",{d:"M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"}),"AddCircleOutline");z=F.default=Do;const Po="18px",R="28px",Fo=u(bo)(({theme:o})=>so`
+		padding: 1rem 1rem;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+		background-color: transparent;
+
+		&:nth-of-type(1) {
+			border-top: none;
+		}
+
+		.MuiSvgIcon-root {
+			padding: 4px;
+			height: ${R};
+			width: ${R};
+
+			display: block;
+			margin-right: 0.25rem;
+			opacity: 0.5;
+
+			transition: all 300ms;
+			transform: rotate(0deg);
+		}
+
+		.MuiAccordionSummary-root {
+			display: flex;
+			gap: 2rem;
+			padding: 0;
+			font-size: ${Po};
+			line-height: ${R};
+
+			font-weight: normal;
+		}
+
+		&.Mui-expanded {
+			.MuiSvgIcon-root {
+				transform: rotate(45deg);
+				opacity: 1;
+				color: var(--color-brand-primary-main);
+			}
+		}
+
+		.MuiAccordionDetails-root {
+			padding-left: calc(0.25rem + ${R});
+		}
+	`),Go=u(Vo)(({theme:o})=>({...o.typography.body2})),N=({question:o,answer:e,actions:r,resources:t})=>f(Fo,{variant:"outlined",children:[f(Go,{children:[a(z,{}),o]}),f(Co,{children:[e,r&&f(X,{children:[a("br",{}),a("br",{}),a(eo,{size:"small",actions:r})]})]})]});try{N.displayName="FaqAccordion",N.__docgenInfo={description:"",displayName:"FaqAccordion",props:{question:{defaultValue:null,description:"",name:"question",required:!0,type:{name:"string"}},answer:{defaultValue:null,description:"",name:"answer",required:!0,type:{name:"string"}},actions:{defaultValue:null,description:"",name:"actions",required:!1,type:{name:"Action[]"}},resources:{defaultValue:null,description:"",name:"resources",required:!1,type:{name:"SimpleLink"}}}}}catch{}const Eo=u("div")`
+	margin-bottom: 2rem;
+	justify-content: center;
+	text-align: center;
+`,V=({title:o,subtitle:e,description:r,actions:t,faqs:n,children:c})=>a(M,{children:a(K,{isRounded:!0,color:"grey",children:f(Q,{children:[a(M,{size:"small",children:a(Eo,{children:a(io,{level:2,children:o})})}),a(M,{size:"small",children:n==null?void 0:n.map((i,d)=>a(N,{...i},d))})]})})});try{V.displayName="FaqBlock",V.__docgenInfo={description:"",displayName:"FaqBlock",props:{faqs:{defaultValue:null,description:"",name:"faqs",required:!0,type:{name:"FaqOptions[]"}},title:{defaultValue:null,description:"",name:"title",required:!1,type:{name:"string | (ReactElement<any, string | JSXElementConstructor<any>> & string) | (ReactFragment & string) | (ReactPortal & string)"}},subtitle:{defaultValue:null,description:"",name:"subtitle",required:!1,type:{name:"ReactNode"}},description:{defaultValue:null,description:"",name:"description",required:!1,type:{name:"ReactNode"}},actions:{defaultValue:null,description:"",name:"actions",required:!1,type:{name:"Action<HTMLElement>[]"}},ActionStackProps:{defaultValue:null,description:"",name:"ActionStackProps",required:!1,type:{name:"ActionStackProps"}}}}}catch{}const qe={component:V},S={args:J()};var W,H,T;S.parameters={...S.parameters,docs:{...(W=S.parameters)==null?void 0:W.docs,source:{originalSource:`{
+  args: generateFaqBlock()
+}`,...(T=(H=S.parameters)==null?void 0:H.docs)==null?void 0:T.source}}};const $e=["Default"];export{S as Default,$e as __namedExportsOrder,qe as default};
+//# sourceMappingURL=FaqBlock.stories-71da75ea.js.map

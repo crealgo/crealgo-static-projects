@@ -1,0 +1,7 @@
+import{c as m,j as p}from"./chance-a31e5df2.js";import{S as e}from"./SocialMediaBlock-d7ad9ea3.js";import"./emotion-element-6a883da9.browser.esm-e55838e6.js";import"./index-f1f749bf.js";import"./_commonjsHelpers-042e6b4d.js";import"./ActionStack-8dd88bdd.js";import"./Button-6766e6f8.js";import"./clsx.m-1229b3e0.js";import"./ButtonBase-13334f8c.js";import"./excludePropsFromForwarding-6c5743cd.js";import"./styled-b6ce4f35.js";import"./defaultTheme-8dc337cc.js";import"./emotion-use-insertion-effect-with-fallbacks.browser.esm-c604b0e9.js";import"./emotion-styled.browser.esm-6ab8df2f.js";import"./ButtonBase-f0dd9438.js";import"./useThemeProps-1ff09982.js";import"./getThemeProps-f2e6066a.js";import"./generateUtilityClasses-bdae82bf.js";import"./emotion-react.browser.esm-5506366e.js";import"./assertThisInitialized-e784747a.js";import"./useIsFocusVisible-44f71b61.js";import"./useEventCallback-f57d74d7.js";import"./useEnhancedEffect-a150ab51.js";import"./Stack-2393552a.js";import"./Typography-b9fed576.js";import"./Text-d456f8b9.js";import"./Link-b69c7059.js";const C={component:e},t={args:{text:m.twitter(),actions:p()}};var o,r,i;t.parameters={...t.parameters,docs:{...(o=t.parameters)==null?void 0:o.docs,source:{originalSource:`{
+  args: {
+    text: chance.twitter(),
+    actions: generateActions()
+  }
+}`,...(i=(r=t.parameters)==null?void 0:r.docs)==null?void 0:i.source}}};const F=["Default"];export{t as Default,F as __namedExportsOrder,C as default};
+//# sourceMappingURL=SocialMediaBlock.stories-d6b0ed4e.js.map
